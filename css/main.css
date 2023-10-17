@@ -1,0 +1,39 @@
+/* .is class name selector */
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* space is descendent combinator */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    flex: 1;
+}
+/* LoVe HAte */
+nav li a,
+nav li a:link,
+nav li a:visited {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    transition: transform .5s;
+}
+
+nav li a:hover,
+nav li a:focus {
+    text-decoration: underline;
+    transform: scale(1.25);
+}
+
+nav li a:active {
+    transform: scale(1.25) translateX (15px);
+}
